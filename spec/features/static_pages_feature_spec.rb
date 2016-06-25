@@ -14,6 +14,7 @@ feature 'static_pages' do
       visit '/'
       click_link 'about'
       expect(page).to have_content 'This is about the site'
+      expect(page).to have_link 'home'
     end
   end
 end
